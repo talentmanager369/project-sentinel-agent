@@ -1,0 +1,37 @@
+{
+  "name": "project-sentinel-agent",
+  "version": "1.0.0",
+  "description": "Agentic Fraud Defense System for mobile application security using Google Cloud Agent Builder and MongoDB",
+  "main": "dist/mcp-server.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/mcp-server.js",
+    "dev": "ts-node mcp-server.ts",
+    "test": "node test-agent-workflow.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "fraud-detection",
+    "mobile-security",
+    "google-cloud",
+    "gemini",
+    "mcp",
+    "mongodb",
+    "agent-builder"
+  ],
+  "author": "TechAmigos",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.1.0",
+    "mongodb": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
